@@ -1,0 +1,169 @@
+.body {
+  position: relative;
+  width: 100vw;
+  border-collapse: collapse;
+  background-color: rgb(21 21 22);
+  color: rgb(212, 212, 212);
+}
+.div {
+  width: 60vw;
+}
+.head {
+  display: table-header-group;
+  position: relative;
+}
+
+.tr {
+  border-bottom: 1px solid #373737;
+}
+
+.th {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+
+.trbody {
+  height: 60px;
+  max-height: 48px;
+  border-bottom: 0.8px solid #373737;
+}
+
+.td {
+  padding-left: 90px;
+  padding-right: 0px;
+  margin: 0px;
+}
+
+.leverage {
+  color: rgb(215, 255, 72);
+  background-color: rgba(215, 255, 72, 0.353);
+  font-size: 12px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 2px;
+  position: absolute;
+  left: 20px;
+  width: 40px;
+}
+
+.symbol {
+  border-left: 5px solid #00bd84;
+  border-right: 2px solid #00bd84;
+}
+.symbol:hover {
+  background-color: rgb(30, 29, 29);
+}
+
+.liq {
+  padding-left: 90px;
+  padding-right: 0px;
+  margin: 0px;
+  color: #f24e53;
+}
+.pnl {
+  padding-left: 90px;
+  padding-right: 0px;
+  margin: 0px;
+  color: #00bd84;
+}
+
+.close {
+  margin: 0px;
+  color: #f24e53;
+  border: 1px solid #f24e5366;
+  width: 10px;
+  padding: 8px 20px 8px 20px;
+  border-radius: 10px;
+}
+.close:hover {
+  background-color: #f24e532d;
+}
+.closeall:hover {
+  background-color: #f24e532d;
+}
+
+.closeall {
+  margin: 0px;
+  color: #f24e53;
+  border: 1px solid #f24e5366;
+  padding: 10px 0px 10px 0px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1160px) {
+  .td {
+    padding-left: 19px;
+    font-size: 14px;
+  }
+  .pnl {
+    padding-left: 73px;
+    padding-right: 12px;
+    font-size: 14px;
+  }
+  .liq {
+    padding-left: 32px;
+    padding: 27px;
+  }
+  .closeall {
+    font-size: 14px;
+  }
+  .close {
+    margin: 0px 0px 0px 15px;
+  }
+  .th {
+    font-size: 14px;
+  }
+}
+@media (max-width: 900px) {
+  .td {
+    padding-left: 28px;
+    font-size: 12px;
+  }
+  .pnl {
+    padding-left: 73px;
+    padding-right: 12px;
+    font-size: 12px;
+  }
+  .liq {
+    padding-left: 32px;
+    padding: 27px;
+  }
+  .closeall {
+    font-size: 14px;
+  }
+  .close {
+    margin: 0px 0px 0px 15px;
+  }
+  .th {
+    font-size: 14px;
+  }
+}
+@media (max-width: 800px) {
+  .body {
+    top: 80px;
+    /* top: 315px; */
+    left: 0px;
+    right: 0px;
+    /* transform: rotate(90deg); */
+  }
+
+  .td,
+  .liq,
+  .pnl {
+    padding-left: 20px;
+  }
+
+  .leverage {
+    font-size: 10px;
+    left: 10px;
+    width: 30px;
+  }
+
+  .div {
+    width: 90vw;
+  }
+  /* body {
+    background-color: rgb(21 21 22);
+  } */
+}

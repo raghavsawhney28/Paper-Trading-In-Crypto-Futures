@@ -1,0 +1,21 @@
+.tradingview {
+  width: 75%;
+  height: 65vh;
+  background-color: #151924;
+  margin-right: 25%;
+  margin-top: 80px;
+}
+
+@media (max-width: 1320px) {
+  .tradingview {
+    width: 53%;
+    height: 73vh;
+  }
+}
+@media (max-width: 800px) {
+  .tradingview {
+    height: 82.2vh;
+    margin-left: 0%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,39 @@
+.body {
+  background-color: rgb(26 25 25);
+  top: 76%;
+  width: 100%;
+  /* padding: 2.4rem 0rem 0.79% 0rem; */
+  color: white;
+  position: relative;
+  height: 26.4vh;
+}
+
+@media (max-width: 1320px) {
+  .body {
+    top: 85%;
+  }
+}
+
+.navBar {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  bottom: 5px;
+}
+
+.span {
+  position: relative;
+  margin-right: 15px;
+  color: #d1d1d1;
+}
+
+.span:hover {
+  border-bottom: 2px solid rgb(215, 255, 72);
+  /* color: rgb(215, 255, 72); */
+  color: white;
+}
+@media (max-width: 810px) {
+  .body {
+    margin-top: 80px;
+  }
+}

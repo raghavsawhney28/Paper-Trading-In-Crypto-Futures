@@ -1,0 +1,46 @@
+
+  .first {
+    margin-top: 1rem;
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55rem;
+    height: 60px;
+    padding: 4px;
+    background: rgb(63, 61, 61);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 15px 40px #08080866;
+  }
+  
+  .slider label {
+    font-size: 24px;
+    font-weight: 400;
+    
+    padding-left: 10px;
+    color: rgb(245, 241, 241);
+  }
+  
+  .slider input[type="range"] {
+    width: 420px;
+    height: 2px;
+    background: black;
+    border: none;
+    outline: none;
+  }
+
+  .volume {
+    color: white;
+  }
+
+
+  

@@ -1,0 +1,60 @@
+.TradingOptions {
+  border: 10px;
+  border-color: green;
+  padding: 6px 12px;
+  font-size: 12.1px;
+  font-family: var(--fontRegular);
+  line-height: 15px;
+  background-color: transparent;
+}
+
+.limit {
+  background-color: transparent;
+  margin-right: 30px;
+  position: relative;
+  padding: 1% 14% 1% 14%;
+  transition: 0.3s;
+  color: white;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 0px;
+}
+
+.limitactive {
+  background-color: transparent;
+  color: white;
+  margin-right: 30px;
+  position: relative;
+  padding: 1% 14% 1% 14%;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 10px;
+  border-bottom: 5px solid rgb(215, 255, 72);
+}
+
+.market {
+  background-color: transparent;
+  color: white;
+  margin-right: 30px;
+  position: relative;
+  padding: 1% 12% 1% 12%;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 0px;
+}
+
+.marketactive {
+  background-color: transparent;
+  color: white;
+  margin-right: 30px;
+  position: relative;
+  padding: 1% 12% 1% 12%;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-bottom: 10px;
+  border-bottom: 5px solid rgb(215, 255, 72);
+}

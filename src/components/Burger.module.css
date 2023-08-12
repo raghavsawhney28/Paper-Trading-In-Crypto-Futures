@@ -1,0 +1,23 @@
+.burger {
+  display: flex;
+  width: 313px;
+  justify-content: unset;
+  height: 63.5vh;
+  background-color: rgb(27, 31, 37);
+  position: absolute;
+  top: 70px;
+  /* opacity: 0; */
+  /* overflow-y: scroll; */
+  /* background-image: url(search.png); */
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 1s;
+}
+@media (max-width: 800px) {
+  .burger {
+    overflow-y: scroll;
+    left: 0px;
+  }
+}

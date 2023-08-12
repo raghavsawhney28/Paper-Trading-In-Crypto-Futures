@@ -1,0 +1,17 @@
+.buybutton {
+  background-color: #00bd84;
+  width: 95%;
+  margin-top: 4%;
+  margin-left: 2.5%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  
+}
+
+.buybutton:active {
+  background-color: #007b56;
+}
+
+

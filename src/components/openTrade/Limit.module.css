@@ -1,0 +1,35 @@
+.body {
+  margin-right: 2%;
+}
+
+.label {
+  background-color: transparent;
+  margin-right: 70%;
+  margin-left: 1.5%;
+  margin-bottom: 2%;
+  margin-top: 4%;
+  padding-top: 2%;
+}
+
+.input {
+  margin-left: 1.5%;
+  background-color: #191a1f;
+  width: 70%;
+  height: 32px;
+  font-size: 12.1px;
+  line-height: 15px;
+  border: none;
+  padding: 3px;
+  text-align: left;
+  margin-right: 1.5%;
+  touch-action: manipulation;
+  outline: none;
+  color: white;
+}
+
+.USDT {
+  font-size: 12.1px;
+  background-color: #191a1f;
+  margin-left: 1.5%;
+  padding-left: 1%;
+}

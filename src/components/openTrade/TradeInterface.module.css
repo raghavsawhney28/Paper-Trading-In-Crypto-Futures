@@ -1,0 +1,112 @@
+.tradingPannel {
+  margin-top: 80px;
+  color: white;
+  width: 25%;
+  margin-left: 75%;
+  position: absolute;
+  top: 0%;
+  height: 65vh;
+  background-color: rgb(30, 35, 41);
+  overflow-x: hidden;
+}
+
+@media (max-width: 1320px) {
+  .tradingPannel {
+    height: 75vh;
+    margin-left: 52.8%;
+    width: 47.2%;
+  }
+}
+
+.first {
+  padding: 0 5px 0 19px;
+}
+
+.second {
+  display: flex;
+  border-radius: 2px;
+  justify-content: flex-start;
+}
+
+.third {
+  width: 49.5%;
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+}
+
+.buy {
+  background-color: #00bd84;
+  transform: skewX(-20deg);
+  border: none;
+  height: 40px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  cursor: pointer;
+  margin-right: 10px;
+  justify-content: center;
+}
+
+.fifth {
+  transform: skewX(20deg);
+}
+
+.sixth {
+  width: 49.5%;
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+}
+
+.sell {
+  border: none;
+  height: 40px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: #f24e53;
+  transform: skewX(-20deg);
+}
+
+.grey {
+  border: none;
+  height: 40px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: #191a1f;
+  transform: skewX(-20deg);
+}
+
+.balance {
+  color: rgb(132, 142, 156);
+  padding-left: 1.6%;
+  font-size: 12px;
+  margin-top: 1%;
+}
+
+.balanceAmount {
+  color: white;
+  margin-left: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: BinancePlex, Arial, sans-serif !important;
+}
+@media (max-width: 810px) {
+  .tradingPannel {
+    height: 84vh;
+    margin-left: 0%;
+    width: 100%;
+  }
+}

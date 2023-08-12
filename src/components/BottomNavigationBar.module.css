@@ -1,0 +1,9 @@
+.icon {
+  background-color: black;
+  color: white;
+}
+.navigation {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+}

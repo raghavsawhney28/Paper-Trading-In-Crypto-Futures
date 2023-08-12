@@ -1,0 +1,13 @@
+.sell_button {
+  background-color: #f24e53;
+  width: 95%;
+  margin-top: 4%;
+  margin-left: 2.5%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+}
+
+.sell_button:hover {
+ background-color: #871115;
+}
