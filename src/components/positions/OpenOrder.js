@@ -26,7 +26,7 @@ const OpenOrder = () => {
             <td className={classes.td}>Limit</td>
             <td className={classes.td}>Long</td>
             <td className={classes.td}>28451</td>
-            <td className={classes.td}>566</td>
+            <td className={classes.td}>566 USDT</td>
             <td className={classes.closetd}>
               <div className={classes.close}>X</div>
             </td>
@@ -43,7 +43,7 @@ const OpenOrder = () => {
             <td className={classes.td}>Limit</td>
             <td className={classes.td}>Long</td>
             <td className={classes.td}>0.7028</td>
-            <td className={classes.td}>350</td>
+            <td className={classes.td}>350 USDT</td>
             <td className={classes.closetd}>
               <div className={classes.close}>X</div>
             </td>

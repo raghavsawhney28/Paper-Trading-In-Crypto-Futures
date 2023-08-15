@@ -11,6 +11,7 @@ import DataContext from "../../context/data";
 import { useEffect } from "react";
 import PositionR from "./PositionR";
 import OpenOrder from "./OpenOrder";
+import TradeHistory from "./TradeHistory";
 
 const Trades = () => {
   const b = useContext(DataContext);
@@ -80,7 +81,15 @@ const Trades = () => {
                 <OpenOrder />
               </TabPanel>
             )}
-            <TabPanel value="3">History</TabPanel>
+            {b.Responsive ? (
+              <TabPanel sx={{ padding: "0", width: "60vw" }} value="3">
+                abhi maintaince mai hai..... :)
+              </TabPanel>
+            ) : (
+              <TabPanel sx={{ padding: "0", width: "60vw" }} value="3">
+                <TradeHistory/>
+              </TabPanel>
+            )}
           </TabContext>
         </Box>
       )}
