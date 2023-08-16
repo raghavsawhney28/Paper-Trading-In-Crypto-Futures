@@ -1,20 +1,23 @@
-import React from 'react'
+import React from "react";
+import classes from "./rPosition.module.css";
 
-const rPosition = () => {
+const Positionr = () => {
   return (
-    <table>
-  <tr>
-    <th>Name</th>
-    <th>Telephone</th>
-    <th>Telephone</th>
-  </tr>
-  <tr>
-    <td>Bill Gates</td>
-    <td>555 77 854</td>
-    <td>555 77 855</td>
-  </tr>
-</table>
-  )
-}
+    <>
+      <table className={classes.table}>
+        <tr>
+          <th>Name</th>
+          <th>Telephone</th>
+          <th>Telephone</th>
+        </tr>
+        <tr>
+          <td className={classes.td}>Bill Gates</td>
+          <td className={classes.td}>555 77 854</td>
+          <td className={classes.td}>555 77 855</td>
+        </tr>
+      </table>
+      </>
+  );
+};
 
-export default rPosition;
+export default Positionr;
