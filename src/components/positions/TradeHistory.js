@@ -14,7 +14,7 @@ export const TradeHistory = () => {
             <th className={classes.th}>Amount</th>
             <th className={classes.th}>Realized PNL</th>
 
-            <th className={classes.closeall}>Cancel All</th>
+            
           </tr>
         </thead>
         <tbody>
@@ -30,9 +30,7 @@ export const TradeHistory = () => {
             <td className={classes.td}>29381</td>
             <td className={classes.td}>566 USDT</td>
             <td className={classes.td}>215.25 USDT</td>
-            <td className={classes.closetd}>
-              <div className={classes.close}>X</div>
-            </td>
+            
           </tr>
         </tbody>
         <tbody>
@@ -48,9 +46,7 @@ export const TradeHistory = () => {
             <td className={classes.td}>0.7028</td>
             <td className={classes.td}>350 USDT</td>
             <td className={classes.td}>-14.95 USDT</td>
-            <td className={classes.closetd}>
-              <div className={classes.close}>X</div>
-            </td>
+            
           </tr>
         </tbody>
       </table>
