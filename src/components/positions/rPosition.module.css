@@ -9,10 +9,16 @@
 }
 
 .closeAll {
-
+position: relative;
+left: 83%;
+color: white;
+background-color: grey;
+border: 0px;
+width: 15vw;
+border-radius: 4px;
+padding: 6px;
 }
 
 .closeAllDiv {
-    margin-right: 0px;
-    padding-right: 0px;
+    width: 100vw;
 }
