@@ -45,17 +45,17 @@ const Trades = () => {
                 aria-label="lab API tabs example"
               >
                 <Tab
-                  sx={{ color: "white", fontSize: "13px" }}
+                  sx={{ color: "white", fontSize: "11px" }}
                   label="Positions(2)"
                   value="1"
                 />
                 <Tab
-                  sx={{ color: "white", fontSize: "13px" }}
+                  sx={{ color: "white", fontSize: "11px" }}
                   label="Open Orders(2)"
                   value="2"
                 />
                 <Tab
-                  sx={{ color: "white", fontSize: "13px" }}
+                  sx={{ color: "white", fontSize: "11px" }}
                   label="Trade History"
                   value="3"
                 />
@@ -87,7 +87,7 @@ const Trades = () => {
               </TabPanel>
             ) : (
               <TabPanel sx={{ padding: "0", width: "60vw" }} value="3">
-                <TradeHistory/>
+                <TradeHistory />
               </TabPanel>
             )}
           </TabContext>
