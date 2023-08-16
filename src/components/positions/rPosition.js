@@ -4,6 +4,9 @@ import classes from "./rPosition.module.css";
 const Positionr = () => {
   return (
     <>
+    <div className={classes.closeAllDiv}>
+        <button className={classes.closeAll}>Close all</button>
+    </div>
       <table className={classes.table}>
         <tr>
           <th>Name</th>
