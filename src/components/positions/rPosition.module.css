@@ -11,14 +11,17 @@
 .closeAll {
 position: relative;
 left: 83%;
-color: white;
-background-color: grey;
-border: 0px;
+color: #f24e53;
+background-color: transparent;
+border: 1px solid #f24e5366;
 width: 15vw;
 border-radius: 4px;
 padding: 6px;
 }
 
+.closeAll:active {
+    background-color: #f24e5366;
+}
 .closeAllDiv {
     width: 100vw;
 }
