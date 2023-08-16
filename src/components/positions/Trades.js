@@ -83,7 +83,7 @@ const Trades = () => {
             )}
             {b.Responsive ? (
               <TabPanel sx={{ padding: "0", width: "60vw" }} value="3">
-                abhi maintaince mai hai..... :)
+                <TradeHistory/>
               </TabPanel>
             ) : (
               <TabPanel sx={{ padding: "0", width: "60vw" }} value="3">
