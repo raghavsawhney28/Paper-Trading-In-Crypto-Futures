@@ -4,9 +4,14 @@ import classes from "./rPosition.module.css";
 const Positionr = () => {
   return (
     <>
-    <div className={classes.closeAllDiv}>
+      <div className={classes.closeAllDiv}>
         <button className={classes.closeAll}>Close all</button>
-    </div>
+      </div>
+      <div>
+        <label className={classes.type}>B</label>
+        <label className={classes.symbol}>BTCUSDT</label>
+        <label>5X</label>
+      </div>
       <table className={classes.table}>
         <tr>
           <th>Name</th>
@@ -19,7 +24,7 @@ const Positionr = () => {
           <td className={classes.td}>555 77 855</td>
         </tr>
       </table>
-      </>
+    </>
   );
 };
 

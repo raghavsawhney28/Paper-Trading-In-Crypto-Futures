@@ -25,3 +25,15 @@ padding: 6px;
 .closeAllDiv {
     width: 100vw;
 }
+
+.symbol {
+    /* background-color: green; */
+    padding: 10px;
+}
+
+.type {
+    left: 5px;
+    position: relative;
+    background-color: #00bd84;
+    padding: 0px 7px;
+}
