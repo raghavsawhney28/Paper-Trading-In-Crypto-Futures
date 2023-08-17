@@ -6,6 +6,7 @@
   color: white;
   position: relative;
   height: 26.4vh;
+  
 }
 
 @media (max-width: 1320px) {
@@ -35,5 +36,7 @@
 @media (max-width: 810px) {
   .body {
     margin-top: 80px;
+    background-color: rgb(36, 36, 36);
+    
   }
 }

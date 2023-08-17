@@ -1,39 +1,95 @@
-.table {
-    width: 100vw;
-  position: relative;
-  top: 0px;
+.body {
+  width: 98vw;
+  padding: 20px 5px 5px 5px;
+  background-color: rgb(36, 36, 36);
+  border-bottom: 1px rgb(71, 71, 71) ridge;
 }
 
-.td {
-    text-align: center;
+.table {
+  width: 97vw;
+  
 }
 
 .closeAll {
-position: relative;
-left: 83%;
-color: #f24e53;
-background-color: transparent;
-border: 1px solid #f24e5366;
-width: 15vw;
-border-radius: 4px;
-padding: 6px;
+  position: relative;
+  left: 83%;
+  color: #f24e53;
+  background-color: transparent;
+  border: 1px solid #f24e5366;
+  width: 15vw;
+  border-radius: 4px;
+  padding: 6px;
+  
+}
+.closePosition {
+    position: relative;
+  left: 83%;
+  color: #f24e53;
+  background-color: transparent;
+  border: 1px solid #f24e5366;
+  width: 20vw;
+  border-radius: 4px;
+  padding: 6px;
+} 
+.closePosition:active {
+    background-color: #f24e5366;
+}
+.closePositionDiv {
+    position: relative;
+    left: 47%;
+    padding-top: 15px;
 }
 
 .closeAll:active {
-    background-color: #f24e5366;
+  background-color: #f24e5366;
 }
 .closeAllDiv {
-    width: 100vw;
+  width: 100vw;
+  background-color: rgb(36, 36, 36);
+  padding-top: 5px;
 }
 
 .symbol {
-    /* background-color: green; */
-    padding: 10px;
+  padding: 10px;
 }
 
 .type {
-    left: 5px;
-    position: relative;
-    background-color: #00bd84;
-    padding: 0px 7px;
+  left: 5px;
+  position: relative;
+  background-color: #00bd84;
+  padding: 0px 7px;
+}
+
+.pnlhead {
+  padding-top: 15px;
+  text-align: left;
+  color: grey;
+}
+
+.roeHead {
+  text-align: right;
+  color: grey;
+}
+
+.pnl {
+  color: #00bd84;
+  font: 20px bold;
+  font-weight: bold;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.roe {
+  text-align: right;
+  color: #00bd84;
+  font: 20px bold;
+  font-weight: bold;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.size {
+    text-align: left;
+}
+
+.margin {
+    text-align: right;
 }
