@@ -47,7 +47,7 @@ const Positionr = () => {
 
       <div className={classes.body}>
         <label className={classes.type}>B</label>
-        <label className={classes.symbol}>BTCUSDT</label>
+        <label className={classes.symbol}>XRPUSDT</label>
         <label>5X</label>
 
         <table className={classes.table}>
@@ -56,8 +56,8 @@ const Positionr = () => {
             <th className={classes.roeHead}>ROE</th>
           </tr>
           <tr>
-            <td className={classes.pnl}>991.35</td>
-            <td className={classes.roe}>+219.15%</td>
+            <td className={classes.pnl}>1546.07</td>
+            <td className={classes.roe}>+315.4%</td>
           </tr>
 
           <tr>
@@ -65,8 +65,8 @@ const Positionr = () => {
             <th className={classes.roeHead}>Margin(USDT)</th>
           </tr>
           <tr>
-            <td className={classes.size}>2250.50</td>
-            <td className={classes.margin}>450.1</td>
+            <td className={classes.size}>2645.50</td>
+            <td className={classes.margin}>476.1</td>
           </tr>
 
           <tr>
@@ -74,8 +74,8 @@ const Positionr = () => {
             <th className={classes.roeHead}>Mark Price</th>
           </tr>
           <tr>
-            <td className={classes.size}>20,048</td>
-            <td className={classes.margin}>28745.1</td>
+            <td className={classes.size}>0.6016</td>
+            <td className={classes.margin}>0.7028</td>
           </tr>
           <div className={classes.closePositionDiv}>
             <button className={classes.closePosition}>Close position</button>
