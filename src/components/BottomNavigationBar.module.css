@@ -3,8 +3,8 @@
   color: white;
 }
 .navigation {
-  position: absolute;
-  bottom: 0px;
+  display: block;
+  top: 52vh;
   width: 100vw;
   
 }

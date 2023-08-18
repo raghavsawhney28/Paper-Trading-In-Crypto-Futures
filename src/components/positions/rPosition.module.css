@@ -3,26 +3,25 @@
   padding: 20px 5px 5px 5px;
   background-color: rgb(36, 36, 36);
   border-bottom: 1px rgb(71, 71, 71) ridge;
+  position: relative;
 }
 
 .table {
   width: 97vw;
-  
 }
 
 .closeAll {
   position: relative;
-  left: 83%;
+  left: 73%;
   color: #f24e53;
   background-color: transparent;
   border: 1px solid #f24e5366;
-  width: 15vw;
+  width: 25vw;
   border-radius: 4px;
   padding: 6px;
-  
 }
 .closePosition {
-    position: relative;
+  position: relative;
   left: 83%;
   color: #f24e53;
   background-color: transparent;
@@ -30,14 +29,14 @@
   width: 20vw;
   border-radius: 4px;
   padding: 6px;
-} 
+}
 .closePosition:active {
-    background-color: #f24e5366;
+  background-color: #f24e5366;
 }
 .closePositionDiv {
-    position: relative;
-    left: 47%;
-    padding-top: 15px;
+  position: relative;
+  left: 47%;
+  padding-top: 15px;
 }
 
 .closeAll:active {
@@ -87,9 +86,9 @@
 }
 
 .size {
-    text-align: left;
+  text-align: left;
 }
 
 .margin {
-    text-align: right;
+  text-align: right;
 }
