@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Paper-Trading-In-Crypto-Futures/static/css/main.a6f0726a.css",
+    "main.js": "/Paper-Trading-In-Crypto-Futures/static/js/main.f8d65e80.js",
+    "index.html": "/Paper-Trading-In-Crypto-Futures/index.html",
+    "main.a6f0726a.css.map": "/Paper-Trading-In-Crypto-Futures/static/css/main.a6f0726a.css.map",
+    "main.f8d65e80.js.map": "/Paper-Trading-In-Crypto-Futures/static/js/main.f8d65e80.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6f0726a.css",
+    "static/js/main.f8d65e80.js"
+  ]
+}
