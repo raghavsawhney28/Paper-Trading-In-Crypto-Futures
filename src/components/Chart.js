@@ -53,7 +53,8 @@ const Chart = () => {
     }
   }, [a.state.name]);
 
-  return <div id="tradingview_49aba" className={classes.tradingview} />;
+  return <div id="tradingview_49aba" className={classes.tradingview} />
+  ;
 };
 
 export default Chart;

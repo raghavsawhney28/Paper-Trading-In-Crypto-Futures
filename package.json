@@ -1,7 +1,9 @@
 {
-  "name": "react",
+  "homepage": "http://raghavsawhney28.github.io/Paper-Trading-In-Crypto-Futures",
+  "name": "future-trading",
   "version": "1.0.0",
-  "description": "React example starter project",
+  "private": true,
+  "description": "Future Trading in Crypto",
   "keywords": [
     "react",
     "starter"
@@ -22,10 +24,13 @@
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
-    "typescript": "4.1.3"
+    "typescript": "4.1.3",
+    "gh-pages": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
