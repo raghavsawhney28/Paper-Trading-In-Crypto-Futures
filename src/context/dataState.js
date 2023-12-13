@@ -13,6 +13,7 @@ const DataState = (props) => {
     const ws = new WebSocket(socketUrl);
 
     // Event listener for incoming messages
+    
     ws.onmessage = (event) => {
       try {
         const data = JSON.parse(event.data);
@@ -25,6 +26,7 @@ const DataState = (props) => {
     };
 
     // Event listener for WebSocket connection error
+    
     ws.onerror = (error) => {
       console.error("WebSocket connection error:", error);
     };
@@ -50,6 +52,7 @@ const DataState = (props) => {
     }
 
     // Initial check
+    
     handleResize();
 
     // Add event listener to handle window resize
