@@ -1,7 +1,6 @@
 import React from "react";
 import DataContext from "../../context/data";
 import classes from "./PositionR.module.css";
-import LivePrice from "../../backend/LivePrice.js";
 import { useContext, useState, useEffect } from "react";
 
 const PositionR = () => {
