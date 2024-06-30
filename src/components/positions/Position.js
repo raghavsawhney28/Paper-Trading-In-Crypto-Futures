@@ -40,6 +40,7 @@ const Positions = () => {
 
     const webSockets = socketUrls.map((url, index) => {
       const ws = new WebSocket(url);
+      
 
       ws.onmessage = (event) => {
         try {
