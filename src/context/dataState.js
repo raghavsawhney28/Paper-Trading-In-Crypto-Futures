@@ -1,5 +1,5 @@
 import React from "react";
-import DataContext from "./data";
+import DataContext from "./data.js";
 import { useState, useEffect } from "react";
 
 const DataState = (props) => {

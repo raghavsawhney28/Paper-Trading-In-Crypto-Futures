@@ -7,12 +7,11 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import { useContext } from "react";
-import DataContext from "../../context/data";
+import DataContext from "../../context/data.js";
 import { useEffect } from "react";
-import PositionR from "./PositionR";
-import Positionr from "./rPosition";
-import OpenOrder from "./OpenOrder";
-import TradeHistory from "./TradeHistory";
+import Positionr from "./rPosition.js";
+import OpenOrder from "./OpenOrder.js";
+import TradeHistory from "./TradeHistory.js";
 
 const Trades = () => {
   const b = useContext(DataContext);
