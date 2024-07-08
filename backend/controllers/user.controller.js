@@ -3,9 +3,8 @@ import  ApiError from "../utils/ApiError.js"
 import { User } from "../models/user/user.model.js";
 import ApiResponse from "../utils/ApiResponse.js";
 import jwt from "jsonwebtoken";
-import { Api } from "@mui/icons-material";
 
-const generageAccessAndRefreshTokens = async(userId) => {
+const generateAccessAndRefreshTokens = async(userId) => {
   try {
     const user = await User.findById(userId)
     const accessToken = user.generateAccessToken()
@@ -109,7 +108,7 @@ const logoutUser = asyncHandler(async(req, res) =>{
       req.user._id,
       {
         $set: {
-          refreshToken: undefined
+          refreshToken: 1
         }
       },
       {
