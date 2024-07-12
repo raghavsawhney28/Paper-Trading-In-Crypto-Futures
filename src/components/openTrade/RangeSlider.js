@@ -65,7 +65,7 @@ const RangeSlider = () => {
       <div className={classes.inputDiv}>
         <button
           className={classes.buttonDec}
-          tabindex="0"
+          tabIndex="0"
           type="button"
           onClick={decreaseLeverage}
         >
@@ -77,7 +77,7 @@ const RangeSlider = () => {
           step="1"
           min="1"
           max="20"
-          inputmode="numeric"
+          inputMode="numeric"
           value={a.Leverage}
           onChange={handleInputChangeLev}
           className={classes.inputLev}
@@ -85,7 +85,7 @@ const RangeSlider = () => {
         <div className={classes.x}>x</div>
         <button
           className={classes.buttonInc}
-          tabindex="0"
+          tabIndex="0"
           type="button"
           onClick={increaseLeverage}
         >

@@ -1,18 +1,24 @@
 import DataState from "./context/dataState.js";
-import Header from "./components/Header.js";
-import TradingView from "./components/tradingView.js";
-import Trades from "./components/positions/Trades.js";
-import BottomNavigationBar from "./components/BottomNavigation.js";
+import SignupPage from "./Pages/SignupPage/SignupPage.js";
+import { BrowserRouter as Router, Route,  Routes } from 'react-router-dom';
+import HomePage from "./Pages/HomePage/HomePage.js"
 
 
 
 function App() {
   return (
     <DataState>
-      <Header />
-      <TradingView />
-      <Trades />
-      <BottomNavigationBar />
+      
+      <Router>
+        <Routes>
+          
+          <Route path="/register" element={<SignupPage/>} />
+          <Route path="/homepage" element={<HomePage/>} />
+          
+          {/* Add more routes as needed */}
+        </Routes>
+      </Router>
+      
     </DataState>
   );
 }
