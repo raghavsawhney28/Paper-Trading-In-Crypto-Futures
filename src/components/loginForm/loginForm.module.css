@@ -1,0 +1,163 @@
+.signupForm {
+    width: 80rem;
+    height: 45rem;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30rem;
+    
+    
+  }
+  
+  .signupFormml {
+    width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .p {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .banner {
+    width: 600px;
+    height: 720px;
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    
+    
+    box-shadow: -3px 0 10px -2px white;
+    object-fit: cover;
+  }
+  .signupFromr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40rem;
+    padding: 1.5rem 3rem;
+    background-color: #1E2026;
+    background-image: url('../assets/image.png');
+    border-top-right-radius: 1.75rem;
+    border-bottom-right-radius: 1.75rem;
+    box-shadow: -3px 0 10px -2px white;
+  }
+  .formHeader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .SVG {
+    height: 1.25rem;
+    left: 0.45rem;
+    position: absolute;
+    top: 2rem;
+    color: white;
+  }
+  
+  
+  
+  .formInput {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 0.75rem;
+  }
+  .label {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .input {
+    border: 2px solid silver;
+    border-radius: 0.6rem;
+    padding: 0.75rem;
+    padding-left: 2rem;
+    background-color: #1E2026;
+    color: white;
+  }
+  .input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #1E2026 inset !important; /* Ensure it matches the background color */
+    -webkit-text-fill-color: #fff !important;
+  }
+  .button {
+    width: 100%;
+    border: none;
+    color: #202630;
+    padding: 0.75rem;
+    font-weight: bold;
+    border-radius: 0.6rem;
+    background-color: #FCD535;
+    cursor: pointer;
+  }
+  .button:active {
+    background-color: #F0B90B;
+  }
+  .button:hover {
+    opacity: .8;
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media (max-width: 1024px) {
+    .signupForm {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    }
+  
+    .signupFormml {
+      width: 100%;
+    }
+  
+    .banner {
+      width: 100%;
+      height: auto;
+      border-radius: 0.75rem 0.75rem 0 0;
+      box-shadow: none;
+    }
+  
+    .signupFromr {
+      width: 100%;
+      padding: 1rem 2rem;
+      border-radius: 0 0 0.75rem 0.75rem;
+      box-shadow: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .p {
+      font-size: 1.5rem;
+    }
+  
+    .input {
+      padding: 0.5rem;
+      padding-left: 1.5rem;
+    }
+  
+    .button {
+      padding: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .p {
+      font-size: 1.2rem;
+    }
+  
+    .input {
+      padding: 0.4rem;
+      padding-left: 1rem;
+    }
+  
+    .button {
+      padding: 0.4rem;
+    }
+  }

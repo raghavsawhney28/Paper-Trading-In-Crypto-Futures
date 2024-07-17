@@ -97,6 +97,11 @@ const DataState = (props) => {
   const [showChart, setShowChart] = useState(false);
   const [showPositions, setShowPositions] = useState(false);
 
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  const login = () => setIsAuthenticated(true);
+  const logout = () => setIsAuthenticated(false);
+
   return (
     <DataContext.Provider
       value={{
@@ -118,6 +123,9 @@ const DataState = (props) => {
         setShowChart,
         showPositions,
         setShowPositions,
+        isAuthenticated,
+        login,
+        logout
       }}
     >
       {props.children}

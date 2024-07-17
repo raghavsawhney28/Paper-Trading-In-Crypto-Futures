@@ -1,17 +1,21 @@
-import classes from "./SignupForm.module.css";
+import classes from "./loginForm.module.css";
 import React from "react";
 
 import { useForm } from "react-hook-form";
 
-import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import HttpsOutlinedIcon from '@mui/icons-material/HttpsOutlined';
 import autumnImage from "../assets/image.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import DataContext from "../../context/data";
+import { useContext } from 'react';
 
-const SignupForm = () => {
-  const navigate = useNavigate();
+
+const LoginForm = () => {
+    const navigate = useNavigate();
+    const a = useContext(DataContext);
   const {
     register,
     handleSubmit,
@@ -20,12 +24,13 @@ const SignupForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post("/api/v1/users/register", data);
-      console.log("Registration successful:", response.data);
+      const response = await axios.post("/api/v1/users/login", data);
+      console.log("Login successful:", response.data);
+      a.login(true)
       navigate("/homepage");
       // Handle success: Redirect user or show success message
     } catch (error) {
-      console.error("Registration failed:", error.response.data);
+      console.error("Login failed:", error.response.data);
       // Handle error: Display error message to the user
     }
   };
@@ -38,31 +43,15 @@ const SignupForm = () => {
         {/* Add fallback content here for browsers that do not support HTML5 video */}
         Your browser does not support the video tag.
       </video>
-      {/* <img src={autumnImage} alt="Autumn" className={classes.banner} /> */}
       </div>
       <div className={classes.signupFromr}>
         <div className={classes.formHeader}>
           
-          <p className={classes.p}>Create Account</p>
+          <p className={classes.p}>Login</p>
         </div>
         <div>
           <form method="POST" onSubmit={handleSubmit(onSubmit)}>
-            <div className={classes.formInput}>
-              <PersonOutlineOutlinedIcon className={classes.SVG}/>
-              
-              <label className={classes.label} htmlFor="fullName">
-                Full Name
-              </label>
-              <input
-                className={classes.input}
-                id="fullName"
-                placeholder="Enter Full Name"
-                {...register("fullName", { required: "Full name is required" })}
-              />
-              {errors.fullname && (
-                <p style={{ color: '#F6465D' }}>{errors.fullname.message}</p>
-              )}
-            </div>
+            
             <div className={classes.formInput}>
               <EmailOutlinedIcon className={classes.SVG} />
               <label className={classes.label} htmlFor="email">
@@ -106,10 +95,10 @@ const SignupForm = () => {
               )}
             </div>
             <button className={classes.button} type="submit">
-              Sign-Up
+              Log-In
             </button>
             <p style={{ fontSize: '16px', color: '#aaa', width: '15rem', padding: '1rem', borderRadius: '1rem', background: '#1b232e' }}>
-              Already have an account? <span style={{ fontSize: '17px', color: 'white', cursor:'pointer' }} onClick={()=>{navigate("/login")}}>Login</span>
+              Don't have an account? <span style={{ fontSize: '17px', color: 'white', cursor: 'pointer' }} onClick={()=>{navigate("/register")}}>Register</span>
             </p>
           </form>
         </div>
@@ -118,4 +107,4 @@ const SignupForm = () => {
   );
 };
 
-export default SignupForm;
+export default LoginForm;

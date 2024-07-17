@@ -67,9 +67,9 @@ const Positions = () => {
         }
       };
 
-      ws.onerror = (error) => {
-        console.error("WebSocket connection error:", error);
-      };
+      // ws.onerror = (error) => {
+      //   console.error("WebSocket connection error:", error);
+      // };
 
       return ws;
     });

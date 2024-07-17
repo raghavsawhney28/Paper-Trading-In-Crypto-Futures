@@ -3,7 +3,7 @@
   height: 45rem;
   display: flex;
   flex-direction: row;
-  background-color: #1E2026;
+  margin-left: 30rem;
 }
 
 .signupFormml {
@@ -34,10 +34,11 @@
   justify-content: center;
   width: 40rem;
   padding: 1.5rem 3rem;
-  background-color: #1E2026;
+  /* background-color: #1E2026; */
+  background-image: url(../assets/image.png);
   
-  border-top-right-radius: 0.75rem;
-  border-bottom-right-radius: 0.75rem;
+  border-top-right-radius: 1.75rem;
+  border-bottom-right-radius: 1.75rem;
   box-shadow: -3px 0 10px -2px white;
 }
 .formHeader {

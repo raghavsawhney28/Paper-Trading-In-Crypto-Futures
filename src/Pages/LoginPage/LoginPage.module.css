@@ -1,8 +1,8 @@
-.signupPage {
+.loginPage {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #1E2026; */
+    background-color: #1E2026;
     background-image: url('../../components/assets/cool-background.png');
   }
