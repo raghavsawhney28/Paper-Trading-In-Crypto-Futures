@@ -10,9 +10,11 @@ router.route("/login").post(loginUser)
 
 //secured routes
 router.route("/logout").post(verifyJWT, logoutUser)
-
 router.route("/refresh-token").post(refreshAccessToken)
 router.route("/change-password").post(verifyJWT, changeCurrentPassword)
+router.get('/status', verifyJWT, (req, res) => {
+    res.status(200).json({ message: 'User is logged in', user: req.user });
+});
 
 
 

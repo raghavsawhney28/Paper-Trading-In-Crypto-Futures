@@ -4,8 +4,10 @@ import cors from 'cors';
 
 const app = express()
 app.use(cors({
-  origin: "https",
-  credentials: true
+  origin: 'http://localhost:3000',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204
 }))
 
 app.use(express.json({limit: "16kb"}))

@@ -26,11 +26,11 @@ const LoginForm = () => {
     try {
       const response = await axios.post("/api/v1/users/login", data);
       console.log("Login successful:", response.data);
-      a.login(true)
+      a.setIsLoggedIn(true)
       navigate("/homepage");
       // Handle success: Redirect user or show success message
     } catch (error) {
-      console.error("Login failed:", error.response.data);
+      console.error("Login failed:");
       // Handle error: Display error message to the user
     }
   };

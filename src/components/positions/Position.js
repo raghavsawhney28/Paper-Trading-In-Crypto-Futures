@@ -3,6 +3,7 @@ import classes from "./Positions.module.css";
 import OnePosition from "./OnePosition.js";
 import { useContext, useState, useEffect } from "react";
 import DataContext from "../../context/data";
+import axios from "axios";
 
 const Positions = () => {
   const [Price, setPrices] = useState(0);
@@ -105,6 +106,30 @@ const Positions = () => {
     );
   };
 
+  const logout = async () => {
+    try {
+      const response = await fetch('http://localhost:8000/api/v1/users/logout', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        credentials: 'include' 
+      });
+
+      if (response.ok) {
+        console.log("Log out sucess")
+        // Redirect to login page or update UI
+        // window.location.href = '/login';
+      } else {
+        console.error('Logout failed');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+
+
   return (
     <div className={classes.div}>
       <table className={classes.body}>
@@ -117,7 +142,7 @@ const Positions = () => {
             <th className={classes.th}>Liq.Price</th>
             <th className={classes.th}>Margin</th>
             <th className={classes.th}>PNL</th>
-            <th className={classes.closeall}>Close All Positions</th>
+            <th className={classes.closeall} onClick={logout}>Close All Positions</th>
           </tr>
         </thead>
 

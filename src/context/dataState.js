@@ -28,7 +28,7 @@ const DataState = (props) => {
     // Event listener for WebSocket connection error
     
     ws.onerror = (error) => {
-      console.error("WebSocket connection error:", error);
+      console.error("WebSocket connection error:");
     };
 
     // Clean up function to close the WebSocket connection when the component unmounts
@@ -97,10 +97,37 @@ const DataState = (props) => {
   const [showChart, setShowChart] = useState(false);
   const [showPositions, setShowPositions] = useState(false);
 
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  
 
-  const login = () => setIsAuthenticated(true);
-  const logout = () => setIsAuthenticated(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const checkLoginStatus = async () => {
+      try {
+        const response = await fetch('/api/v1/users/status', {
+          method: 'GET',
+          credentials: 'include', // Include cookies with the request
+          headers: {
+            'Content-Type': 'application/json',
+            // 'Authorization': 'Bearer <your_jwt_token>' // Uncomment if using token in header
+          },
+        });
+        
+        if (response.ok) {
+         
+          const data = await response.json();
+          setIsLoggedIn(true);
+        } else {
+          setIsLoggedIn(false);
+        }
+      } catch (error) {
+        console.error('Error checking login status:', error);
+        setIsLoggedIn(false);
+      }
+    };
+
+    checkLoginStatus();
+  }, []);
 
   return (
     <DataContext.Provider
@@ -123,9 +150,8 @@ const DataState = (props) => {
         setShowChart,
         showPositions,
         setShowPositions,
-        isAuthenticated,
-        login,
-        logout
+        isLoggedIn,
+        setIsLoggedIn
       }}
     >
       {props.children}
