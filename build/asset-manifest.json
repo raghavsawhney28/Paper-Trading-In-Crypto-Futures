@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/register/static/css/main.d73ac510.css",
-    "main.js": "/register/static/js/main.459814fe.js",
-    "static/media/image.png": "/register/static/media/image.ef9473be17a1150b77f9.png",
-    "static/media/cool-background.png": "/register/static/media/cool-background.3a233c46f666246aade0.png",
-    "index.html": "/register/index.html",
-    "main.d73ac510.css.map": "/register/static/css/main.d73ac510.css.map",
-    "main.459814fe.js.map": "/register/static/js/main.459814fe.js.map"
+    "main.css": "/Paper-Trading-In-Crypto-Futures/static/css/main.806d08bf.css",
+    "main.js": "/Paper-Trading-In-Crypto-Futures/static/js/main.9cd5efdc.js",
+    "static/media/image.png": "/Paper-Trading-In-Crypto-Futures/static/media/image.ef9473be17a1150b77f9.png",
+    "static/media/cool-background.png": "/Paper-Trading-In-Crypto-Futures/static/media/cool-background.3a233c46f666246aade0.png",
+    "index.html": "/Paper-Trading-In-Crypto-Futures/index.html",
+    "main.806d08bf.css.map": "/Paper-Trading-In-Crypto-Futures/static/css/main.806d08bf.css.map",
+    "main.9cd5efdc.js.map": "/Paper-Trading-In-Crypto-Futures/static/js/main.9cd5efdc.js.map"
   },
   "entrypoints": [
-    "static/css/main.d73ac510.css",
-    "static/js/main.459814fe.js"
+    "static/css/main.806d08bf.css",
+    "static/js/main.9cd5efdc.js"
   ]
 }
