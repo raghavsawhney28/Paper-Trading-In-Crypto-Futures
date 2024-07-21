@@ -99,35 +99,35 @@ const DataState = (props) => {
 
   
 
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
-  useEffect(() => {
-    const checkLoginStatus = async () => {
-      try {
-        const response = await fetch('/api/v1/users/status', {
-          method: 'GET',
-          credentials: 'include', // Include cookies with the request
-          headers: {
-            'Content-Type': 'application/json',
-            // 'Authorization': 'Bearer <your_jwt_token>' // Uncomment if using token in header
-          },
-        });
+  // useEffect(() => {
+  //   const checkLoginStatus = async () => {
+  //     try {
+  //       const response = await fetch('/api/v1/users/status', {
+  //         method: 'GET',
+  //         credentials: 'include', // Include cookies with the request
+  //         headers: {
+  //           'Content-Type': 'application/json',
+  //           // 'Authorization': 'Bearer <your_jwt_token>' // Uncomment if using token in header
+  //         },
+  //       });
         
-        if (response.ok) {
+  //       if (response.ok) {
          
-          const data = await response.json();
-          setIsLoggedIn(true);
-        } else {
-          setIsLoggedIn(false);
-        }
-      } catch (error) {
-        console.error('Error checking login status:', error);
-        setIsLoggedIn(false);
-      }
-    };
+  //         const data = await response.json();
+  //         setIsLoggedIn(true);
+  //       } else {
+  //         setIsLoggedIn(false);
+  //       }
+  //     } catch (error) {
+  //       console.error('Error checking login status:', error);
+  //       setIsLoggedIn(false);
+  //     }
+  //   };
 
-    checkLoginStatus();
-  }, []);
+  //   checkLoginStatus();
+  // }, []);
 
   return (
     <DataContext.Provider
