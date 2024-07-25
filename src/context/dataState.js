@@ -69,6 +69,7 @@ const DataState = (props) => {
   };
 
   const [Leverage, setLeverage] = useState(5);
+  
   const [showBur, setBur] = useState(false);
 
   const price = "2614";

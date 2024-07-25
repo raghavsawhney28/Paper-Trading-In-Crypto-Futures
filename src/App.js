@@ -14,7 +14,9 @@ function App() {
  
   return (
     <DataState>
+      
       <Router>
+        
         <Routes>
           <Route element={<PrivateRoutes/>}>
               <Route path="/homepage" element={<HomePage/>}/>

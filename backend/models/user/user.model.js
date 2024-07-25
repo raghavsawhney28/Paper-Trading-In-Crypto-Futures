@@ -18,6 +18,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: [true, "Password is required"]
     },
+    avlBalance: {
+        type: Number,
+        default: 10000
+    },
     refreshToken: {
         type: String
     }
