@@ -4,7 +4,7 @@ import cors from 'cors';
 
 const app = express()
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://paper-trading-in-crypto-futures-tmtc.vercel.app',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204
