@@ -24,7 +24,7 @@ const LoginForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post("/api/v1/users/login", data);
+      const response = await axios.post("http://localhost:8000/api/v1/users/login", data);
       console.log("Login successful:", response.data);
       a.setIsLoggedIn(true)
       navigate("/homepage");
