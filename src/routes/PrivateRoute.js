@@ -11,7 +11,7 @@ const PrivateRoutes = () => {
       try {
         const response = await fetch('https://paper-trading-in-crypto-futures-backend.onrender.com/api/v1/users/status', {
           method: 'GET',
-          credentials: 'include', // Include cookies with the request
+          // credentials: 'include', // Include cookies with the request
           headers: {
             'Content-Type': 'application/json',
             // 'Authorization': 'Bearer <your_jwt_token>' // Uncomment if using token in header
