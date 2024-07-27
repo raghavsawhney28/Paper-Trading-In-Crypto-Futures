@@ -24,7 +24,7 @@ const LoginForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post("https://paper-trading-in-crypto-futures-backend.onrender.com/api/v1/users/login", data);
+      const response = await axios.post("/api/v1/users/login", data);
       console.log("Login successful:", response.data);
       a.setIsLoggedIn(true)
       navigate("/homepage");
