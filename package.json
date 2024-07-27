@@ -1,5 +1,5 @@
 {
-  "homepage": "/homepage",
+  
   "name": "future-trading",
   "version": "1.0.0",
   "proxy": "http://localhost:8000",
