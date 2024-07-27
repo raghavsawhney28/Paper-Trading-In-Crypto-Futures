@@ -9,7 +9,7 @@ const PrivateRoutes = () => {
   useEffect(() => {
     const checkLoginStatus = async () => {
       try {
-        const response = await fetch('/api/v1/users/status', {
+        const response = await fetch('https://paper-trading-in-crypto-futures-backend.onrender.com/api/v1/users/status', {
           method: 'GET',
           credentials: 'include', // Include cookies with the request
           headers: {
