@@ -19,7 +19,7 @@ const SignupForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post("/api/v1/users/register", data);
+      const response = await axios.post("https://paper-trading-in-crypto-futures-backend.onrender.com/api/v1/users/register", data);
       console.log("Registration successful:", response.data);
       navigate("/homepage");
       // Handle success: Redirect user or show success message
