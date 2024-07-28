@@ -4,6 +4,7 @@ import OnePosition from "./OnePosition.js";
 import { useContext, useState, useEffect } from "react";
 import DataContext from "../../context/data";
 import axios from "axios";
+import Cookies from 'js-cookie';
 
 const Positions = () => {
   const [Price, setPrices] = useState(0);
@@ -107,12 +108,15 @@ const Positions = () => {
   };
 
   const logout = async () => {
+    Cookies.remove('accessToken');
+    Cookies.remove('refreshToken');
     try {
       const response = await fetch('https://paper-trading-in-crypto-futures-backend.onrender.com/api/v1/users/logout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
+        
         // credentials: 'include' 
       });
 
