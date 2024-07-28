@@ -108,7 +108,7 @@ const Positions = () => {
 
   const logout = async () => {
     try {
-      const response = await fetch('api/v1/users/logout', {
+      const response = await fetch('https://paper-trading-in-crypto-futures-backend.onrender.com/api/v1/users/logout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
