@@ -9,9 +9,9 @@ const PrivateRoutes = () => {
   useEffect(() => {
     const checkLoginStatus = async () => {
       try {
-        const response = await fetch('/api/v1/users/status', {
+        const response = await fetch('https://paper-trading-in-crypto-futures-backend.onrender.com/api/v1/users/status', {
           method: 'GET',
-          credentials: 'include', // Include cookies with the request
+          // credentials: 'include', // Include cookies with the request
           headers: {
             'Content-Type': 'application/json',
             // 'Authorization': 'Bearer <your_jwt_token>' // Uncomment if using token in header
@@ -24,7 +24,7 @@ const PrivateRoutes = () => {
           console.log(true, "User is logged in");
         } else {
           setIsLoggedIn(false);
-          console.log(false, "User is not logged in");
+          console.log(false, "User is not logged in kyuki");
         }
       } catch (error) {
         console.error('Error checking login status:', error);

@@ -6,7 +6,6 @@ import { useForm } from "react-hook-form";
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import HttpsOutlinedIcon from '@mui/icons-material/HttpsOutlined';
-import autumnImage from "../assets/image.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 

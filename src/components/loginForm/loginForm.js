@@ -6,7 +6,6 @@ import { useForm } from "react-hook-form";
 
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import HttpsOutlinedIcon from '@mui/icons-material/HttpsOutlined';
-import autumnImage from "../assets/image.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import DataContext from "../../context/data";
@@ -24,7 +23,7 @@ const LoginForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post("/api/v1/users/login", data);
+      const response = await axios.post("https://paper-trading-in-crypto-futures-backend.onrender.com/api/v1/users/login", data);
       console.log("Login successful:", response.data);
       a.setIsLoggedIn(true)
       navigate("/homepage");
