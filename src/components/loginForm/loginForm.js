@@ -1,15 +1,13 @@
 import classes from "./loginForm.module.css";
 import React from "react";
-
 import { useForm } from "react-hook-form";
-
-
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import HttpsOutlinedIcon from '@mui/icons-material/HttpsOutlined';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import DataContext from "../../context/data";
 import { useContext } from 'react';
+import Cookies from 'js-cookie';
 
 
 const LoginForm = () => {
@@ -25,11 +23,18 @@ const LoginForm = () => {
     try {
       const response = await axios.post("https://paper-trading-in-crypto-futures-backend.onrender.com/api/v1/users/login", data);
       console.log("Login successful:", response.data);
-      a.setIsLoggedIn(true)
+  
+      const { accessToken, refreshToken } = response.data.data;
+     
+      // Set tokens in cookies
+      Cookies.set('accessToken', accessToken, { expires: 1 }); // Expires in 1 day
+      Cookies.set('refreshToken', refreshToken, { expires: 7 }); // Expires in 7 days
+  
+      a.setIsLoggedIn(true); // Ensure 'a' is defined and has 'setIsLoggedIn' method
       navigate("/homepage");
       // Handle success: Redirect user or show success message
     } catch (error) {
-      console.error("Login failed:");
+      console.error("Login failed:", error.response?.data || error.message);
       // Handle error: Display error message to the user
     }
   };
