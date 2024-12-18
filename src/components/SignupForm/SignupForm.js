@@ -65,7 +65,7 @@ const SignupForm = () => {
             <div className={classes.formInput}>
               <EmailOutlinedIcon className={classes.SVG} />
               <label className={classes.label} htmlFor="email">
-                Email
+                Email 
               </label>
               <input
                 className={classes.input}

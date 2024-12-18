@@ -3,7 +3,6 @@ import Icon from "./Icon";
 import { useContext } from "react";
 import DataContext from "../context/data";
 import Burger from "./Burger";
-import { GiHamburgerMenu } from "react-icons/gi";
 import CurrentCoin from "./CurrentCoin";
 
 const Header = () => {
