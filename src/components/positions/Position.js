@@ -111,7 +111,7 @@ const Positions = () => {
     Cookies.remove('accessToken');
     Cookies.remove('refreshToken');
     try {
-      const response = await fetch('http://localhost:3000/api/v1/users/logout', {
+      const response = await fetch('https://paper-trading-in-crypto-futures-backend.onrender.com/api/v1/users/logout', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
