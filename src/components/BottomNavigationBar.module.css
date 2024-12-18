@@ -4,6 +4,7 @@
 }
 .navigation {
   display: block;
-  top: 52vh;
+  top: 96vh;
   width: 100vw;
+  position: absolute;
 }
