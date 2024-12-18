@@ -12,7 +12,7 @@ const PrivateRoutes = () => {
       try {
         const accessToken = Cookies.get('accessToken');
         
-        const response = await fetch('http://localhost:3000/api/v1/users/status', {
+        const response = await fetch('https://paper-trading-in-crypto-futures-backend.onrender.com/api/v1/users/status', {
           method: 'GET',
           // credentials: 'include', // Include cookies with the request
           headers: {
