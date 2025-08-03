@@ -28,7 +28,7 @@ const DataState = (props) => {
     // Event listener for WebSocket connection error
     
     ws.onerror = (error) => {
-      console.error("WebSocket connection error:");
+      console.error("WebSocket connection error:", error);
     };
 
     // Clean up function to close the WebSocket connection when the component unmounts
